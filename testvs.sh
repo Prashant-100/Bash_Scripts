@@ -1,10 +1,11 @@
 #!/bin/bash
 
-name=prashant
+name="prashant"
 count=${#name}
 echo $name
 echo $count
 while [ $count -gt 0 ]; do
-echo ($name[$count])
-count=expr`$count - 1`
+c=name($count)
+echo "$c"
+count=`expr $count - 1`
 done
